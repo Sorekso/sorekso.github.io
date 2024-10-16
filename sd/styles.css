@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column; /* Alinear verticalmente */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-size: 36px; /* Tamaño de la fuente */
+  color: #4CAF50; /* Color del texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-family: 'Arial', sans-serif; /* Fuente */
+  text-align: center; /* Centrar el texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para un efecto bonito */
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+#wheel {
+  border: 16px solid #333;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 4s ease-out;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid red;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
